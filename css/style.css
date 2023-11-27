@@ -1,2 +1,22 @@
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var(--font-family-2);
+}
+/* Variables */
+:root {
+    --main-color: #54372a;
+    --second-color: #d8582e;
+    --text-color: #060413;
+    --container-color: #f8e4be;
+    --bg-color: #f9f6f2;
+    --text-alter-color: #94908e;
+    --poppins-font: 'Poppins', sans-serif;
+    --font-family-2: 'Playfair Display', serif;
+}
