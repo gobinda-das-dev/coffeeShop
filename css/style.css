@@ -96,3 +96,58 @@ header {
     color: var(--bg-color);
     font-size: 20px;
 }
+
+
+
+/* -----------Home Section---------- */
+.home {
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.home-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.home-text p {
+    max-width: 300px;
+    font-size: 0.94rem;
+    font-family: var(--poppins-font);
+    margin: 1rem 0 1.5rem;
+}
+
+.btn {
+    max-width: 160px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    background: var(--text-color);
+    border-radius: 2rem;
+}
+
+.btn span {
+    font-family: var(--poppins-font);
+    text-transform: uppercase;
+    color: var(--bg-color);
+}
+
+.btn .bx {
+    font-size: 20px;
+    color: var(--bg-color);
+    background: var(--second-color);
+    padding: 5px;
+    border-radius: 50%;
+    transform: rotate(60deg);
+}
+
+.home-img {
+    max-width: 560px;
+    width: 100%;
+}
