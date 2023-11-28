@@ -325,3 +325,63 @@ header {
     font-family: var(--poppins-font);
     margin-top: 10px;
 }
+
+/* --------Reviews-------- */
+.review {
+    max-width: 550px;
+    margin: auto;
+    width: 100%;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.5rem !important;
+}
+
+.review-box img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 7px solid #fff8f7;
+    object-fit: cover;
+    object-position:  center;
+    box-shadow: 0 4px 16px hsla(355, 25%, 15%, 0.1);
+}
+
+.review-box h2 {
+    font-size: 1rem;
+    color: var(--main-color);
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.review-box span {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.review-box p {
+    font-size: 0.9rem;
+    font-family: var(--poppins-font);
+    color: var(--text-alter-color);
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 0.2rem !important;
+    background: var(--main-color) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem !important;
+    background: var(--second-color) !important;
+    transition: 0.2s all ease-in-out;
+}
