@@ -97,6 +97,37 @@ header {
     color: var(--bg-color);
     font-size: 20px;
 }
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+
+.menu-icon div {
+    display: block;
+    background: var(--bg-color);
+    height: 2px;
+    width: 23px;
+    transition: 0.3s;
+}
+
+.move-js .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move-js .line2 {
+    opacity: 0;
+}
+
+.move-js .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
 
 
 
@@ -618,5 +649,37 @@ header {
 
     .logo {
         font-size: 1.25rem;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90vw;
+        background: var(--text-color);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 0;
+    }
+
+    .open-menu-js {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        opacity: 1;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 1rem 0;
     }
 }
