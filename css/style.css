@@ -347,7 +347,7 @@ header {
     border-radius: 50%;
     border: 7px solid #fff8f7;
     object-fit: cover;
-    object-position:  center;
+    object-position: center;
     box-shadow: 0 4px 16px hsla(355, 25%, 15%, 0.1);
 }
 
@@ -516,7 +516,7 @@ header {
 .footer-box h3 {
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
 }
 
 .footer-box a {
@@ -528,4 +528,95 @@ header {
     padding: 30px;
     color: var(--main-color);
     text-align: center;
+}
+
+
+
+
+
+/* --------------------Responsiveness-------------------- */
+@media (max-width: 1080px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px;
+    }
+}
+
+@media (max-width: 915px) {
+    section {
+        padding: 2rem 0;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 766px) {
+    .home {
+        min-height: 500px;
+        grid-template-columns: 1fr;
+        margin-top: 4.5rem !important;
+    }
+
+    .home-text {
+        order: 1;
+    }
+
+    .heading h2,
+    .book-data h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    .book {
+        padding: 20px;
+    }
+
+    .book-data {
+        margin-top: 3rem;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .book-data form {
+        display: grid;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .input-box {
+        border-bottom: 1px solid var(--text-alter-color);
+    }
+    
+    .footer {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        top: 15px;
+    }
+
+    .nav {
+        padding: 14px 20px;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
 }
