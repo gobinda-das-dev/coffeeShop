@@ -25,6 +25,7 @@
 body {
     color: var(--text-color);
     background: var(--bg-color);
+    position: relative;
 }
 
 /* --Costom Scrollbar-- */
@@ -35,6 +36,44 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 1rem;
+}
+
+/* --Mouse move-- */
+.ball {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: var(--main-color);
+    opacity: 0.5;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+#ball1{
+    transition: 0 all linear;
+}
+#ball2{
+    transition: 2ms all linear;
+}
+#ball3{
+    transition: 7ms all linear;
+}
+#ball4{
+    transition: 14ms all linear;
+}
+#ball5{
+    transition: 19ms all linear;
+}
+#ball6{
+    transition: 30ms all linear;
+}
+#ball7{
+    transition: 37ms all linear;
+}
+#ball8{
+    transition: 46ms all linear;
 }
 
 a {
