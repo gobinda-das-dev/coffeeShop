@@ -27,6 +27,16 @@ body {
     background: var(--bg-color);
 }
 
+/* --Costom Scrollbar-- */
+html::-webkit-scrollbar {
+    width: 0.4rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 1rem;
+}
+
 a {
     text-decoration: none;
 }
