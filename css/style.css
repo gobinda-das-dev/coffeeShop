@@ -683,3 +683,46 @@ header {
         margin: 1rem 0;
     }
 }
+
+@media (max-width: 500px) {
+    .heading h2 br {
+        display: contents;
+    }
+    
+    .service-content {
+        justify-content: center;
+    }
+
+    .product-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 380px) {
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .service-content {
+        grid-template-columns: repeat(auto-fit, minmax(auto, 140px));
+    }
+
+    .ser-box img {
+        height: 80px;
+        width: 80px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .heading h2,
+    .book-data h2 {
+        font-size: 1.2rem;
+    }
+}
