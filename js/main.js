@@ -56,7 +56,7 @@ function ballPicker(ball, dets) {
 }
 
 document.querySelector('body').addEventListener('mousemove', (dets) => {
-    console.log("hello");
+    
     ballPicker(ball1, dets);
     ballPicker(ball2, dets);
     ballPicker(ball3, dets);
